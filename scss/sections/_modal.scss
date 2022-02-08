@@ -1,0 +1,54 @@
+.modal {
+    &__overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($for, 0.4);
+        z-index: 100;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.2s;
+
+        &--visible {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &__dialog {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 478px;
+        padding: 33px 88px;
+        background-color: $primary;
+        color: $bg;
+        border-radius: 8px;
+        z-index: 101;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.2s;
+
+        &--visible {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        right: 18px;
+        top: 17px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 18px;
+    }
+}

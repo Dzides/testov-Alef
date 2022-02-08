@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пижама детская | Магазин детской одежды</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <ul class="menu-mobil">
+                    <li class="menu-mobil__item">
+                        <a class="menu-mobil__link" href="#">
+                            Постельное белье
+                        </a>
+                    </li>
+                    <li class="menu-mobil__item">
+                        <a class="menu-mobil__link" href="#">
+                            Одежда для дома
+                        </a>
+                    </li>
+                    <li class="menu-mobil__item">
+                        <a class="menu-mobil__link" href="#">
+                            Одежда для улицы
+                        </a>
+                    </li>
+                    <li class="menu-mobil__item">
+                        <a class="menu-mobil__link" href="#">
+                            Выход
+                        </a>
+                    </li>
+                </ul>
+                <a class="header__logo logo" href="#">
+                    <img class="logo__img" src="images/logo/logo.svg" alt="Логотип сайта">
+                </a>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--person" href="#" target="_blank">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="8.459" cy="4.189" r="3.689" />
+                                <path d="M.5 15.338h15M.5 15.84c0-3.405 4.347-5.927 7.714-5.838 3.219.085 7.286 2.433 7.286 5.838" />
+                            </svg> -->
+                            <svg>
+                                <use xlink:href="images/sprite.svg#user"></use>
+                            </svg>
+                            <span class="sr-only">Вход в личный кабинет</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--favorites" href="#" target="_blank">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.9 3.095C6.7-2.521-2.591 1.904 1.76 7.602 6.112 13.3 8.4 15.49 8.4 15.49" />
+                                <path d="M7.894 3.095c1.2-5.616 10.836-1.191 6.485 4.507C10.027 13.3 7.7 15.5 7.7 15.5" />
+                                <path d="M7.391 2.708h1.013l-.02.533H7.39v-.533Z" />
+                            </svg> -->
+                            <svg>
+                                <use xlink:href="images/sprite.svg#favorites"></use>
+                            </svg>
+                            <span class="sr-only">Избранное</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--bag" href="#" target="_blank">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.255 7.566a2.5 2.5 0 0 1 2.492-2.697h8.506a2.5 2.5 0 0 1 2.492 2.697l-.525 6.631a2.5 2.5 0 0 1-2.492 2.303H4.272a2.5 2.5 0 0 1-2.492-2.303l-.525-6.631Z" />
+                                <path d="M4 9.5S3.783 1 8 1s4 8.5 4 8.5" />
+                            </svg> -->
+                            <svg>
+                                <use xlink:href="images/sprite.svg#bag"></use>
+                            </svg>
+                            <span class="sr-only">Ваши покупки</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="burger" type="button">
+                    <span class="burger__line"></span>
+                    <span class="sr-only">Открыть/закрыть мобильное меню</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <article class="card">
+                <div class="card__slide slide">
+                    <div class="card__thumb">
+                        <div class="card__thumb-item">
+                            <img src="images/card/card-bg.jpg" alt="фото товара">
+                        </div>
+                        <div class="card__thumb-item">
+                            <img src="images/card/card-pij-1.jpg" alt="фото товара">
+                        </div>
+                        <div class="card__thumb-item">
+                            <img src="images/card/card-pij-2.jpg" alt="фото товара">
+                        </div>
+                        <div class="card__thumb-item">
+                            <img src="images/card/card-pij-3.jpg" alt="фото товара">
+                        </div>
+                        <div class="card__thumb-item">
+                            <img src="images/card/card-pij-4.jpg" alt="фото товара">
+                        </div>
+                    </div>
+                    <div class="card__big">
+                        <div class="card__big-item">
+                            <img src="images/card/card-bg.jpg" alt="фото товара">
+                        </div>
+                        <div class="card__big-item">
+                            <img src="images/card/card-pij-1.jpg" alt="фото товара">
+                        </div>
+                        <div class="card__big-item">
+                            <img src="images/card/card-pij-2.jpg" alt="фото товара">
+                        </div>
+                        <div class="card__big-item">
+                            <img src="images/card/card-pij-3.jpg" alt="фото товара">
+                        </div>
+                        <div class="card__big-item">
+                            <img src="images/card/card-pij-4.jpg" alt="фото товара">
+                        </div>
+                    </div>
+                </div>
+                <div class="card__content">
+                    <div class="card__inner">
+                        <h1 class="card__title">
+                            Пижама для девочек
+                        </h1>
+                        <span class="card__number">
+                            Арт. 02765/46
+                        </span>
+                        <div class="reviews">
+                            <span class="reviews__title">
+                                Отзывы
+                            </span>
+                            <div class="stars" data-stars="4">
+                                <svg class="star rating" data-rating="1" width="48px" height="48px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="48" height="48" fill="white" fill-opacity="0.01" />
+                                    <path d="M23.9986 5L17.8856 17.4776L4 19.4911L14.0589 29.3251L11.6544 43L23.9986 36.4192L36.3454 43L33.9586 29.3251L44 19.4911L30.1913 17.4776L23.9986 5Z"
+                                        fill="#2F88FF" stroke="black" stroke-width="4" stroke-linejoin="round" />
+                                </svg>
+                                <svg class="star rating" data-rating="2" width="48px" height="48px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="48" height="48" fill="white" fill-opacity="0.01" />
+                                    <path d="M23.9986 5L17.8856 17.4776L4 19.4911L14.0589 29.3251L11.6544 43L23.9986 36.4192L36.3454 43L33.9586 29.3251L44 19.4911L30.1913 17.4776L23.9986 5Z"
+                                        fill="#2F88FF" stroke="black" stroke-width="4" stroke-linejoin="round" />
+                                </svg>
+                                <svg class="star rating" data-rating="3" width="48px" height="48px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="48" height="48" fill="white" fill-opacity="0.01" />
+                                    <path d="M23.9986 5L17.8856 17.4776L4 19.4911L14.0589 29.3251L11.6544 43L23.9986 36.4192L36.3454 43L33.9586 29.3251L44 19.4911L30.1913 17.4776L23.9986 5Z"
+                                        fill="#2F88FF" stroke="black" stroke-width="4" stroke-linejoin="round" />
+                                </svg>
+                                <svg class="star rating" data-rating="4" width="48px" height="48px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="48" height="48" fill="white" fill-opacity="0.01" />
+                                    <path d="M23.9986 5L17.8856 17.4776L4 19.4911L14.0589 29.3251L11.6544 43L23.9986 36.4192L36.3454 43L33.9586 29.3251L44 19.4911L30.1913 17.4776L23.9986 5Z"
+                                        fill="#2F88FF" stroke="black" stroke-width="4" stroke-linejoin="round" />
+                                </svg>
+                                <svg class="star rating" data-rating="5" width="48px" height="48px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="48" height="48" fill="white" fill-opacity="0.01" />
+                                    <path d="M23.9986 5L17.8856 17.4776L4 19.4911L14.0589 29.3251L11.6544 43L23.9986 36.4192L36.3454 43L33.9586 29.3251L44 19.4911L30.1913 17.4776L23.9986 5Z"
+                                        fill="#2F88FF" stroke="black" stroke-width="4" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <a class="link reviews__link arrow" href="#" target="_blank">
+                                14 отзывов
+                            </a>
+                        </div>
+                        <div class="card__cost">
+                            <span class="card__price-new">800 ₽</span>
+                            <span class="card__price-old arrow">1 500 ₽</span>
+                        </div>
+                        <div class="card__action">
+                            <button class="button card__discount" type="button">
+                                скидка -36%
+                            </button>
+                            <button class="button card__discount" type="button">
+                                акция -20%
+                            </button>
+                        </div>
+                        <div class="card__select">
+                            <button class="button button--size card__size arrow" type="button">
+                                Выбрать размер
+                            </button>
+                            <ul class="card__list">
+                                <li class="card__item">
+                                    10
+                                </li>
+                                <li class="card__item">
+                                    12
+                                </li>
+                                <li class="card__item">
+                                    14
+                                </li>
+                                <li class="card__item">
+                                    16
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="link card__link card__link--size" href="#" target="_blank">
+                            Определить размер
+                        </a>
+                        <div class="card__action card__action--indent">
+                            <div class="card__count">
+                                <a class="card__plus" href="#">+</a>
+                                <input class="card__quantity" type="text" value="1">
+                                <a class="card__minus" href="#">-</a>
+                            </div>
+                            <ul class="card__buttons" >
+                                <li>
+                                    <button class="button button--size card__basket" type="button">
+                                        <span class="button__text">Добавить в корзину</span>
+                                        <svg width="16" height="17" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.255 7.566a2.5 2.5 0 0 1 2.492-2.697h8.506a2.5 2.5 0 0 1 2.492 2.697l-.525 6.631a2.5 2.5 0 0 1-2.492 2.303H4.272a2.5 2.5 0 0 1-2.492-2.303l-.525-6.631Z" />
+                                            <path d="M4 9.5S3.783 1 8 1s4 8.5 4 8.5" />
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="button button--size card__favourites" type="button">
+                                        <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.9 3.095C6.7-2.521-2.591 1.904 1.76 7.602 6.112 13.3 8.4 15.49 8.4 15.49" />
+                                            <path d="M7.894 3.095c1.2-5.616 10.836-1.191 6.485 4.507C10.027 13.3 7.7 15.5 7.7 15.5" />
+                                            <path d="M7.391 2.708h1.013l-.02.533H7.39v-.533Z" />
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="link card__link card__link--click" href="#" target="_blank">
+                            Купить в 1 клик
+                        </a>
+                    </div>
+                    <span class="card__line">
+                        <span class="sr-only">Линия</span>
+                    </span>
+                    <ul class="card__inner card__inner--column">
+                        <li>
+                            <a class="link card__link card__link--indent card__link--descr" href="#" target="_blank">
+                                Описание товара
+                            </a>
+                        <li>
+                            <a class="link card__link card__link--indent card__link--clock" href="#" target="_blank">
+                                Доставка и возврат
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link card__link card__link--indent card__link--card" href="#" target="_blank">
+                                Способы оплаты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+        <section class="gallery">
+            <div class="container">
+                <h2 class="sr-only">Наша галлерея</h2>
+                <a class="link link--position gallery__link" href="#" target="_blank">
+                    Посмотреть все стили
+                </a>
+                <ul class="gallery__box">
+                    <li class="gallery__item gallery__item--one">
+                        <img class="gallery__img gallery__img--big" src="images/gallery/gallery-1.jpg" alt="Фото стилей">
+                        <a class="gallery__info" href="#" target="_blank">
+                            <span class="gallery__text">
+                                Узнай что на мне
+                            </span>
+                            <span class="gallery__num">
+                                200
+                            </span>
+                        </a>
+                    </li>
+                    <li class="gallery__item gallery__item--two">
+                        <img class="gallery__img" src="images/gallery/gallery-2.jpg" alt="Фото стилей">
+                        <a class="gallery__info" href="#" target="_blank">
+                            <span class="gallery__text">
+                                Узнай что на мне
+                            </span>
+                            <span class="gallery__num">
+                                200
+                            </span>
+                        </a>
+                    </li>
+                    <li class="gallery__item gallery__item--three">
+                        <img class="gallery__img" src="images/gallery/gallery-3.jpg" alt="Фото стилей">
+                        <a class="gallery__info" href="#" target="_blank">
+                            <span class="gallery__text">
+                                Узнай что на мне
+                            </span>
+                            <span class="gallery__num">
+                                200
+                            </span>
+                        </a>
+                    </li>
+                    <li class="gallery__item gallery__item--foure">
+                        <img class="gallery__img" src="images/gallery/gallery-4.jpg" alt="Фото стилей">
+                        <a class="gallery__info" href="#" target="_blank">
+                            <span class="gallery__text">
+                                Узнай что на мне
+                            </span>
+                            <span class="gallery__num">
+                                200
+                            </span>
+                        </a>
+                    </li>
+                    <li class="gallery__item gallery__item--five">
+                        <img class="gallery__img" src="images/gallery/gallery-5.jpg" alt="Фото стилей">
+                        <a class="gallery__info" href="#" target="_blank">
+                            <span class="gallery__text">
+                                Узнай что на мне
+                            </span>
+                            <span class="gallery__num">
+                                200
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <nav class="footer__navigation">
+                <div class="footer__box">
+                    <h2 class="footer__title">
+                        Покупателям
+                    </h2>
+                    <ul class="footer__item">
+                        <li>
+                            <a class="footer__link link" href="#" target="_blank">
+                                Каталог
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__link link" href="#" target="_blank">
+                                Акции
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__link link" href="#" target="_blank">
+                                Бренды
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__box">
+                    <h2 class="footer__title">
+                        О нас
+                    </h2>
+                    <ul class="footer__item">
+                        <li">
+                            <a class="footer__link link" href="#" target="_blank">
+                                О компании
+                            </a>
+                            </li>
+                            <li>
+                                <a class="footer__link link" href="#" target="_blank">
+                                    Новости
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer__link link" href="#" target="_blank">
+                                    Команда
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footer__box footer__box--form">
+                <h2 class="footer__title footer__title--bottom">
+                    Узнайте первыми о новинках и акциях
+                </h2>
+                <form class="subscribe control" action="#" method="post">
+                    <input class="subscribe__input" type="email" name="email" placeholder="Адрес электронной почты" required>
+                    <button class="subscribe__close" type="button">
+                        <span class="sr-only">удалить запись</span>
+                    </button>
+                    <button class="subscribe__button button" type="submit">
+                        Подписаться
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal modal-bag pop-up">
+        <div class="modal__overlay modal-bag__overlay">
+            <div class="modal__dialog modal-bag__dialog">
+                <a href="#" class="modal__close">
+                    <img src="images/svg/close.svg" width="16" height="16" alt="Icon: close">
+                </a>
+                <span class="modal__title">
+                    Товар
+                    <span>" "</span>
+                    В количестве
+                    <span> " "</span>
+                    В корзину добавлен
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-fav pop-up">
+        <div class="modal__overlay modal-fav__overlay">
+            <div class="modal__dialog modal-fav__dialog">
+                <a href="#" class="modal__close">
+                    <img src="images/svg/close.svg" width="16" height="16" alt="Icon: close">
+                </a>
+                <span class="modal__title">
+                    Товар
+                    <span>" "</span>
+                    В избранное добавлен
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

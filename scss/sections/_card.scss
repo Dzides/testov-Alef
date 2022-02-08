@@ -1,0 +1,557 @@
+.card {
+  display: flex;
+  padding: 67px 0 16px;
+  width: 100%;
+
+  @include r(768) {
+    padding-top: 61px;
+  }
+
+  @include r(640) {
+    flex-direction: column;
+  }
+
+  @include r(414) {
+    padding-top: 68px;
+  }
+
+  &__slide {
+    position: relative;
+    margin-right: 16px;
+    width: 50%;
+
+    @include r(768) {
+      margin-right: 6px;
+      width: 54%;
+    }
+
+    @include r(640) {
+      width: 100%;
+    }
+  }
+
+  &__thumb {
+    position: absolute;
+    top: 22px;
+    left: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 4;
+
+    @include r(414) {
+      top: 30px;
+      left: 22px;
+    }
+
+    img {
+      max-width: 70px;
+      height: 91px;
+      object-fit: cover;
+      cursor: pointer;
+
+      @include r(414) {
+        height: 52px;
+      }
+    }
+  }
+
+  &__thumb-item {
+    max-width: 70px !important;
+    width: 100%;
+    margin-bottom: 5px;
+
+    @include r(414) {
+      margin-bottom: 2px;
+    }
+  }
+
+  &__big {
+    max-width: 686px !important;
+    width: 100%;
+
+    img {
+      max-width: 686px;
+      width: 100%;
+      min-height: 540px;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+
+      @include r(640) {
+        min-height: 480px;
+        max-height: 525px;
+        object-position: top;
+      }
+    }
+  }
+
+  &__content {
+    padding-top: 22px;
+    width: 50%;
+
+    @include r(992) {
+      padding-top: 10px;
+    }
+
+    @include r(768) {
+      width: 45%;
+    }
+
+    @include r(640) {
+      width: 100%;
+    }
+
+    @include r(414) {
+      padding-top: 15px;
+    }
+  }
+
+  &__inner {
+    padding-left: 20px;
+
+    @include r(992) {
+      padding-left: 10px;
+    }
+
+    @include r(414) {
+      padding-left: 21px;
+      padding-right: 20px;
+    }
+
+    &--column {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    margin-bottom: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+  }
+
+  &__number {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: -0.04em;
+    color: $secondary;
+  }
+
+  &__cost {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    letter-spacing: 0.04em;
+  }
+
+  &__price-new {
+    display: block;
+    margin-right: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  &__price-old {
+    position: relative;
+    display: block;
+    padding-right: 17px;
+    text-decoration: line-through;
+    line-height: 1;
+    color: $secondary;
+  }
+
+  &__action {
+    display: flex;
+    margin-bottom: 32px;
+
+    @include r(414) {
+      flex-wrap: wrap;
+    }
+
+    &--indent {
+      margin-bottom: 12px;
+
+      @include r(414) {
+        margin-bottom: 21px;
+      }
+    }
+  }
+
+  &__discount {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0;
+
+    &:not(:last-child) {
+      margin-right: 6px;
+    }
+  }
+
+  &__select {
+    position: relative;
+    max-width: 314px;
+    z-index: 0;
+  }
+
+  &__size {
+    position: relative;
+    width: 100%;
+    padding: 0 30px 0 16px;
+    margin-bottom: 12px;
+    text-align: start;
+    transition: all 0.3s;
+
+    &::before {
+      left: 93%;
+      transform: translateY(-50%) rotate(135deg);
+    }
+
+    &--active {
+      &::before {
+        left: 92%;
+        top: 60%;
+        transform: translateY(-50%) rotate(-45deg);
+      }
+    }
+  }
+
+  &__list {
+    position: absolute;
+    width: 100%;
+    top: 43px;
+    text-align: center;
+    transform: translateY(-350%);
+    opacity: 0;
+    border: 1px solid $secondary;
+    background-color: $for;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+
+    &--active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  &__item {
+    padding: 10px;
+    cursor: pointer;
+
+    @include desktop {
+      &:hover {
+        background-color: $bg;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    margin-bottom: 12px;
+    letter-spacing: 0.04em;
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+
+    &--size {
+      margin-bottom: 40px;
+    }
+
+    &--click {
+      margin-bottom: 30px;
+    }
+
+    &--indent {
+      position: relative;
+      padding-left: 25px;
+      z-index: 0;
+
+      @include r(414) {
+        padding-left: 23px;
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        transform: translateY(-50%);
+        left: 2px;
+        width: 15px;
+        height: 15px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+
+    &--descr {
+      &::before {
+        background-image: url(../images/svg/descr.svg);
+      }
+    }
+
+    &--clock {
+      &::before {
+        background-image: url(../images/svg/clock.svg);
+      }
+    }
+
+    &--card {
+      &::before {
+        background-image: url(../images/svg/card.svg);
+      }
+    }
+  }
+
+  &__count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    height: 44px;
+    width: 145px;
+    letter-spacing: 0.04em;
+    background-color: $for;
+    white-space: nowrap;
+    overflow: hidden;
+
+    @include r(640) {
+      margin-bottom: 20px;
+    }
+
+    @include r(414) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__minus,
+  &__plus {
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+
+    @include desktop {
+      &:hover {
+        background-color: $third;
+      }
+    }
+
+    &:active {
+      background-color: $secondary;
+    }
+  }
+
+  &__plus {
+    padding: 12px 15px 12px 20px;
+
+    @include r(992) {
+      padding-left: 15px;
+    }
+
+    @include r(640) {
+      padding-left: 20px;
+    }
+  }
+
+  &__minus {
+    padding: 12px 20px 12px 15px;
+
+    @include r(992) {
+      padding-right: 15px;
+    }
+
+    @include r(640) {
+      padding-right: 20px;
+    }
+  }
+
+
+  &__quantity {
+    width: 61px;
+    text-align: center;
+    background-color: $for;
+
+    @include r(992) {
+      width: 44px;
+    }
+
+    @include r(640) {
+      width: 61px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__basket {
+    padding: 0 28px;
+    margin-right: 4px;
+    color: $bg;
+    background-color: $primary;
+
+    @include r(768) {
+      padding: 0 15px;
+    }
+
+    @include r(414) {
+      padding: 0 26px;
+      margin-right: 6px;
+    }
+
+    svg {
+      display: none;
+
+      @include r(992) {
+        display: block;
+        fill: $bg;
+      }
+
+      @include r(640) {
+        display: none;
+      }
+    }
+
+    @include desktop {
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  &__favourites {
+    padding: 6px 12px 0;
+    background-color: $primary;
+
+    path {
+      stroke: $bg;
+      fill: $bg;
+    }
+
+    @include desktop {
+      &:hover {
+        path {
+          stroke: $primary;
+        }
+      }
+    }
+
+    &--active {
+      path {
+        fill: $primary;
+      }
+    }
+  }
+
+  &__line {
+    display: block;
+    height: 0;
+    margin-bottom: 20px;
+    border: 0.5px solid $third;
+  }
+}
+
+.slick-track {
+  width: 70px;
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+  margin-bottom: 46px;
+  letter-spacing: 0.04em;
+
+  @include r(992) {
+    margin-bottom: 16px;
+  }
+
+  @include r(576) {
+    margin-bottom: 46px;
+  }
+
+  &__title {
+    margin-right: 13px;
+  }
+
+  &__link {
+    position: relative;
+    text-decoration-color: transparent;
+    transition: all 0.3s ease-in-out;
+
+    @include desktop {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.stars {
+  display: flex;
+  margin-right: 5px;
+  cursor: pointer;
+
+  svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  path {
+    fill: $bg;
+    stroke: $primary;
+    stroke-width: 6;
+  }
+
+  .star {
+    &:not(:last-child) {
+      margin-right: 2px;
+    }
+
+    path {
+      fill: $bg;
+      stroke: $primary;
+      stroke-width: 6;
+    }
+
+    @include desktop {
+      &:hover~.star path {
+        fill: $bg;
+      }
+    }
+  }
+
+  @include desktop {
+    &:hover {
+      .star path {
+        fill: $primary;
+      }
+    }
+  }
+}
+
+.stars[data-stars] .star path {
+  fill: $primary;
+}
+
+.stars[data-stars="1"] .star:nth-child(1)~.star path {
+  fill: $bg;
+}
+
+.stars[data-stars="2"] .star:nth-child(2)~.star path {
+  fill: $bg;
+}
+
+.stars[data-stars="3"] .star:nth-child(3)~.star path {
+  fill: $bg;
+}
+
+.stars[data-stars="4"] .star:nth-child(4)~.star path {
+  fill: $bg;
+}
+
+.stars[data-stars="5"] .star:nth-child(5)~.star path {
+  fill: $bg;
+}

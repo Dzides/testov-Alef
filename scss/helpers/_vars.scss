@@ -1,0 +1,25 @@
+$bg: #fff;
+$active: #000;
+$primary: #333;
+$secondary: #828282;
+$third: #C4C4C4;
+$for: #f2f2f2;
+
+
+@mixin r($width) {
+    @media (max-width: #{$width}px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: (1025px)) {
+        @content;
+    }
+}
+
+// @include desktop {
+//     &:hover {
+//         border-color: $bg;
+//     }
+// }
